@@ -1,6 +1,6 @@
 # 📚알고리즘 문제풀이 스터디📚
 
-> EPPER `22/02/20 ~ 22/03/19`<br>
+> [EPPER `22/02/20 ~ 22/03/19`](https://github.com/zmin9/Algorithm-problem-solving/tree/epper-18th)<br>
 > 🗓 `22/04/08 ~`
 
 ## 규칙
