@@ -14,7 +14,7 @@ const coins = [500, 100, 50, 10, 5, 1];
 // 큰 단위의 잔돈을 많이 쓸 수록 전체 잔돈의 개수가 적어지므로
 // 가장 큰 단위의 잔돈부터 거슬러줄 수있는 최대값을 거슬러준다
 coins.forEach((coin)=>{
-    if(N<=0) return;
+    if(change<=0) return;
     result = result + Math.floor(change / coin);
     change %= coin;
 });
