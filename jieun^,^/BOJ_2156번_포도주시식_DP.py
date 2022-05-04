@@ -19,11 +19,12 @@ def D():
     dp[1] = dp[0]+wine[1]
     if n==2: return
 
-    # max 후보에 dp[i-1]이 추가되어야 하는 이유: 현재 i를 포함하지 않고, i-1, i-2번째를 연속으로 합하는 것이 더 큰 경우 고려
-    # ex) [1, 1, 0, 0, 1, 1] 
-
+    # 2-3 = -1이므로 따로 처리해주기 --> [a, b, c]일 때, a+c or b+c or a+b
     dp[2] = max(dp[0]+ wine[2], wine[1]+ wine[2], dp[1]) 
     if n==3: return
+
+    # max 후보에 dp[i-1]이 추가되어야 하는 이유: 현재 i를 포함하지 않고, i-1, i-2번째를 연속으로 합하는 것이 더 큰 경우 고려
+    # ex) [1, 1, 0, 0, 1, 1] 
 
     # bottom - up DP
     for i in range(3, n):   # 3 ~ n-1
