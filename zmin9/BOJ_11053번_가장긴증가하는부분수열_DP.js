@@ -1,6 +1,6 @@
 // 입력 처리
 const fs = require('fs');
-//const [N, input] = fs.readFileSync('./input.txt').toString().trim().split('\n');
+//const [N, input] = fs.readFileSync('./dev/stdin').toString().trim().split('\n');
 const [N, input] = fs.readFileSync('./input.txt').toString().trim().split('\n');
 const nums = input.trim().split(' ').map(Number);
 
