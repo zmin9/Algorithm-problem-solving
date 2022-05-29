@@ -33,5 +33,5 @@ def Backtrack(ans, num):
         Backtrack(ans, i)
         ans.pop()   # 이번 요소 다시 빼기 - backtrack
 
-for c in range(C):
+for c in range(C):  # 사전순으로 
     Backtrack([], c)
